@@ -1,5 +1,5 @@
 # WIN11-purgeStandbyListScript
-Give me my ram back
+Give me my ram back - Add it to your scheduled tasks for contstant ram bandwidth set to run once an hour :-)
 
 Admin tokens hold the privilege SeProfileSingleProcessPrivilege, but it starts out disabled — Windows makes processes explicitly opt in to sensitive privileges. So the method does the classic three-step dance: OpenProcessToken gets a handle to the current process's security token, LookupPrivilegeValue translates the privilege's name into its LUID, and AdjustTokenPrivileges flips it on. The check for error 1300 (ERROR_NOT_ALL_ASSIGNED) is there because AdjustTokenPrivileges has an infamous quirk: it returns success even when it enabled nothing, and only the last-error code tells the truth.
 
