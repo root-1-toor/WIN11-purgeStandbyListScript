@@ -1,4 +1,4 @@
-# WIN11-purgeStandbyListScript
+# WIN11-clearCacheScript
 
 Give me my RAM back 🙂
 
